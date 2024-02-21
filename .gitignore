@@ -1,0 +1,35 @@
+# ไฟล์ .gitignore สำหรับ Node.js และ Express
+
+# ไฟล์ทั่วไป
+node_modules/
+bower_components/
+.env
+
+# ไฟล์ log
+logs/
+*.log
+
+# ไฟล์ cache
+tmp/
+cache/
+
+# ไฟล์ backup
+*.bak
+
+# ไฟล์ IDE
+.idea/
+.vscode/
+
+# ไฟล์ database
+db.sqlite3
+database.sqlite
+
+# ไฟล์ config
+config.json
+
+# ไฟล์ tests
+tests/
+
+# ไฟล์อื่นๆ
+coverage/
+.nyc_output/
