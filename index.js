@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true})); //ทำให้ express อ่านข้อมูลจากฟอร์มได้
 app.set('view engine', 'hbs'); // ตั้งค่า view engine เป็น hbs
-hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/partials'); // การ register บอกถึงที่อยู่ของไฟล์ชิ้นส่วนต่างๆ
 
 // หน้าแรก '/'
 app.get('/', (req, res) => {
