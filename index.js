@@ -1,12 +1,12 @@
 const { log } = require('console');
 const express = require('express');
 const { registerPartials } = require('hbs');
-const hbs = require('nbs') // นำ hbs เข้ามาใช้งาน
+const hbs = require('hbs') // นำ hbs เข้ามาใช้งาน
 const app = express();
 
 app.use(express.urlencoded({ extended: true})); //ทำให้ express อ่านข้อมูลจากฟอร์มได้
 app.set('view engine', 'hbs'); // ตั้งค่า view engine เป็น hbs
-hbs.registerPartials();
+hbs.registerPartials(__dirname + '/views/partials');
 
 // หน้าแรก '/'
 app.get('/', (req, res) => {
